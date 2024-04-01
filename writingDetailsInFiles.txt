@@ -1,0 +1,34 @@
+///*********************************************************************************************************************************************************************************************************************************
+#if deleteDetaills
+        fprintf(outputOptimalSolutionFileSBGNE,"\nsorted Binary Group Number Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileSBGNE, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileFC,"\nFractionnal Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileFC, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileBE,"\nEdge Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileBE, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileCBE,"\nEcart Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileCBE, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileSCBE,"\nEcart Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileSCBE, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFilePMPEdgeBased,"\npMedian Encoding base sur les arretes : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFilePMPEdgeBased, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFilePMPClusterBased,"\npMedian Encoding base la taille des clusters : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFilePMPClusterBased, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileVTC,"\nEcart Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileVTC, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileEE,"\nEcart Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileEE, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+        fprintf(outputOptimalSolutionFileSVTC,"\nEcart Encoding : Le numero de graphe = %d ,Le nombre de generation = %d , la taille de la population = %d \n\n",numeroGraphe,nbrGeneration,taillePopulation);
+        writeDetailsProblemInSolutionsFile(outputOptimalSolutionFileSVTC, nbrCohabitationConstraintes,nbrNonCohabitationConstraintes,cohabitationConstraintes,nonCohabitationConstraintes);
+
+#endif // deleteDetaills
+///*********************************************************************************************************************************************************************************************************************************

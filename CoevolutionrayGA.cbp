@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CoevolutionrayGA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CoevolutionrayGA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CoevolutionrayGA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/gmp" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\gmp\.libs\libgmp.a" />
+			<Add directory="C:/gmp" />
+		</Linker>
+		<Unit filename="SortedVTC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SortedVTC.h" />
+		<Unit filename="binaryEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="binaryEncoding.h" />
+		<Unit filename="communesFunctions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="communesFunctions.h" />
+		<Unit filename="compilationConditionnelle.h" />
+		<Unit filename="cutBasedEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cutBasedEncoding.h" />
+		<Unit filename="ecartEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ecartEncoding.h" />
+		<Unit filename="fractionalEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fractionalEncoding.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="opningFiles.txt" />
+		<Unit filename="pMediansEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pMediansEncoding.h" />
+		<Unit filename="sortedBinaryGroupNumberEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sortedBinaryGroupNumberEncoding.h" />
+		<Unit filename="sortedCutBasedEncoding.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sortedCutBasedEncoding.h" />
+		<Unit filename="staticAllocationMemory.txt" />
+		<Unit filename="typeDeclaration.h" />
+		<Unit filename="vertex_to_cluster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vertex_to_cluster.h" />
+		<Unit filename="writingDetailsInFiles.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

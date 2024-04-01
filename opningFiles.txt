@@ -1,0 +1,320 @@
+
+        sprintf(cheminGraph,"../../referencedGraphs/LesGraphes/fluxMatrixGraphe%d.txt",numeroGraphe);
+        sprintf(cheminCocyclesDeBase,"../benchmark/cocyclesDeBase/cocyclesDeBase%d.txt",numeroGraphe);
+        sprintf(cheminInputFileConstrainte,"../../referencedGraphs/constraintsFile/constraintsFileGraph%d.txt",numeroGraphe);
+
+
+        inputFile = fopen(cheminGraph,"r");
+        if(inputFile == NULL )
+        {
+            printf("Impossible d'ouvrir le fichier fluxMatrixGraphe de  en Lecture\n");
+            exit(EXIT_FAILURE);
+        }
+
+        inputFileConstrainte = fopen(cheminInputFileConstrainte,"r");
+        if(inputFileConstrainte == NULL )
+        {
+            printf("Impossible d'ouvrir le fichier inputFileConstrainte en Lecture\n");
+            exit(EXIT_FAILURE);
+        }
+
+        outputFileCocyclesDeBase = fopen(cheminCocyclesDeBase,"w");
+        if(outputFileCocyclesDeBase == NULL )
+        {
+            printf("Impossible d'ouvrir le fichier outputFileCocyclesDeBase en Lecture\n");
+            exit(EXIT_FAILURE);
+        }
+
+///================================================================================
+#if DVTC
+    sprintf(cheminBestSolutionVTC,"../benchmark/CGA/DVTC/bestSolutionVTC%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationVTC,"../benchmark/CGA/DVTC/allPopulationVTC%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionVTC,"../benchmark/CGA/DVTC/OptimalSolutionVTC%d.txt",numeroGraphe);
+
+    outputFileVTC=fopen(cheminBestSolutionVTC,"w");
+    outputFilePopVTC=fopen(cheminAllPopulationVTC,"w");
+    outputOptimalSolutionFileVTC=fopen(cheminOptimalSolutionVTC,"w");
+
+    if(outputFileVTC == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+
+///================================================================================
+#if SVTC
+    sprintf(cheminBestSolutionSVTC,"../benchmark/CGA/SVTC/bestSolutionSVTC%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationSVTC,"../benchmark/CGA/SVTC/allPopulationSVTC%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionSVTC,"../benchmark/CGA/SVTC/OptimalSolutionSVTC%d.txt",numeroGraphe);
+
+    outputFileSVTC=fopen(cheminBestSolutionSVTC,"w");
+    outputFilePopSVTC=fopen(cheminAllPopulationSVTC,"w");
+    outputOptimalSolutionFileSVTC=fopen(cheminOptimalSolutionSVTC,"w");
+
+    if(outputFileSVTC == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionSVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopSVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationSVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileSVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionSVTC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if FVTC
+    sprintf(cheminBestSolutionFVTC,"../benchmark/CGA/FVTC/bestSolutionFVTC%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationFVTC,"../benchmark/CGA/FVTC/allPopulationFVTC%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionFVTC,"../benchmark/CGA/FVTC/OptimalSolutionFVTC%d.txt",numeroGraphe);
+
+    outputFileFVTC=fopen(cheminBestSolutionFVTC,"w");
+    outputFilePopFVTC=fopen(cheminAllPopulationFVTC,"w");
+    outputOptimalSolutionFileFVTC=fopen(cheminOptimalSolutionFVTC,"w");
+
+    if(outputFileFVTC == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",cheminBestSolutionFVTC);
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopFVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",cheminBestSolutionFVTC);
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileFVTC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",cheminBestSolutionFVTC);
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if VAE
+    sprintf(cheminBestSolutionVAE,"../benchmark/CGA/VAE/bestSolutionVAE%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationVAE,"../benchmark/CGA/VAE/allPopulationVAE%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionVAE,"../benchmark/CGA/VAE/OptimalSolutionVAE%d.txt",numeroGraphe);
+
+    outputFileVAE=fopen(cheminBestSolutionVAE,"w");
+    outputFilePopVAE=fopen(cheminAllPopulationVAE,"w");
+    outputOptimalSolutionFileVAE=fopen(cheminOptimalSolutionVAE,"w");
+
+    if(outputFileVAE == NULL )
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",cheminBestSolutionVAE);
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopVAE== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",cheminAllPopulationVAE);
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileVAE== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s en ecriture\n",outputOptimalSolutionFileVAE);
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if PMEB
+    sprintf(cheminBestSolutionPMPEdgeBased,"../benchmark/CGA/PMEB/bestSolutionPMP%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationPMPEdgeBased,"../benchmark/CGA/PMEB/allPopulationPMP%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionPMPEdgeBased,"../benchmark/CGA/PMEB/OptimalSolutionPMP%d.txt",numeroGraphe);
+
+    outputFilePMPEdgeBased=fopen(cheminBestSolutionPMPEdgeBased,"w");
+    outputFilePopPMPEdgeBased=fopen(cheminAllPopulationPMPEdgeBased,"w");
+    outputOptimalSolutionFilePMPEdgeBased=fopen(cheminOptimalSolutionPMPEdgeBased,"w");
+
+    if(outputFilePMPEdgeBased == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier données bestSolutionPMP affectation base sur arretes en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopPMPEdgeBased== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationPMP base sur arretes en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFilePMPEdgeBased== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionPMP.txt base sur arretes en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if PMCA
+    sprintf(cheminBestSolutionPMPClusterBased,"../benchmark/CGA/PMCA/bestSolutionPMP%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationPMPClusterBased,"../benchmark/CGA/PMCA/allPopulationPMP%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionPMPClusterBased,"../benchmark/CGA/PMCA/OptimalSolutionPMP%d.txt",numeroGraphe);
+
+    outputFilePMPClusterBased=fopen(cheminBestSolutionPMPClusterBased,"w");
+    outputFilePopPMPClusterBased=fopen(cheminAllPopulationPMPClusterBased,"w");
+    outputOptimalSolutionFilePMPClusterBased=fopen(cheminOptimalSolutionPMPClusterBased,"w");
+
+    if(outputFilePMPClusterBased == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionPMP base sur les cluster en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopPMPClusterBased == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationPMP base sur les cluster en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFilePMPClusterBased == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionPMP.txt  base sur les cluster en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if EA
+   sprintf(cheminBestSolutionEA,"../benchmark/CGA/EA/bestSolutionEA%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationEA,"../benchmark/CGA/EA/allPopulationEA%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionEA,"../benchmark/CGA/EA/OptimalSolutionEA%d.txt",numeroGraphe);
+
+    outputFileEA=fopen(cheminBestSolutionEA,"w");
+    outputFilePopEA=fopen(cheminAllPopulationEA,"w");
+    outputOptimalSolutionFileEA=fopen(cheminOptimalSolutionEA,"w");
+
+    if(outputFileEA == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionEA.txt en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopEA== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationEA.txt en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileEA== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionEA en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if DC
+    sprintf(cheminBestSolutionDC,"../benchmark/CGA/DC/bestSolutionDC%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationDC,"../benchmark/CGA/DC/allPopulationDC%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionDC,"../benchmark/CGA/DC/OptimalSolutionDC%d.txt",numeroGraphe);
+
+    outputFileDC=fopen(cheminBestSolutionDC,"w");
+    outputFilePopDC=fopen(cheminAllPopulationDC,"w");
+    outputOptimalSolutionFileDC=fopen(cheminOptimalSolutionDC,"w");
+
+    if(outputFileDC == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionDC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopDC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationDC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileDC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionDC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if IC
+    sprintf(cheminBestSolutionIC,"../benchmark/CGA/IC/bestSolutionIC%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationIC,"../benchmark/CGA/IC/allPopulationIC%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionIC,"../benchmark/CGA/IC/OptimalSolutionIC%d.txt",numeroGraphe);
+
+    outputFileIC=fopen(cheminBestSolutionIC,"w");
+    outputFilePopIC=fopen(cheminAllPopulationIC,"w");
+    outputOptimalSolutionFileIC=fopen(cheminOptimalSolutionIC,"w");
+
+    if(outputFileIC == NULL )
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionIC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopIC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationIC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileIC== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionIC en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+#endif
+///================================================================================
+#if CGE
+    sprintf(cheminBestSolutionCGE,"../benchmark/CGA/CGE/bestSolutionCGE%d.txt",numeroGraphe);
+    sprintf(cheminAllpopulationCGE,"../benchmark/CGA/CGE/allPopulationCGE%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionCGE,"../benchmark/CGA/CGE/OptimalSolutionCGE%d.txt",numeroGraphe);
+
+
+    outputFileCGE=fopen(cheminBestSolutionCGE,"w");
+    outputFilePopCGE=fopen(cheminAllpopulationCGE,"w");
+    outputOptimalSolutionFileCGE=fopen(cheminOptimalSolutionCGE,"w");
+
+    if(outputFileCGE == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionCGE en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopCGE== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationCGE en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFileCGE== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionCGE en ecriture\n");
+        exit(EXIT_FAILURE);
+	}
+#endif
+///================================================================================
+
+
+///================================================================================
+#if PGA
+    sprintf(cheminBestSolutionPGA,"../benchmark/CGA/PGA/bestSolutionPGA%d.txt",numeroGraphe);
+    sprintf(cheminAllPopulationPGA,"../benchmark/CGA/PGA/allPopulationPGA%d.txt",numeroGraphe);
+    sprintf(cheminOptimalSolutionPGA,"../benchmark/CGA/PGA/OptimalSolutionPGA%d.txt",numeroGraphe);
+
+
+    outputFilePGA=fopen(cheminBestSolutionPGA,"w");
+    outputFilePopPGA=fopen(cheminAllPopulationPGA,"w");
+    outputOptimalSolutionFilePGA=fopen(cheminOptimalSolutionPGA,"w");
+
+    if(outputFilePGA == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier bestSolutionPGA en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputFilePopPGA== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier allPopulationPGA en ecriture\n");
+        exit(EXIT_FAILURE);
+    }
+    if(outputOptimalSolutionFilePGA== NULL)
+    {
+        printf("Impossible d'ouvrir le fichier OptimalSolutionPGA en ecriture\n");
+        exit(EXIT_FAILURE);
+	}
+#endif
+///================================================================================

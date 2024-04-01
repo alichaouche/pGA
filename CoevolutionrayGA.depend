@@ -1,0 +1,168 @@
+# depslib dependency file v1.0
+1527257931 source:d:\workingfolderagprogramming\coevolutionrayga\binaryencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./binaryEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523356788 d:\workingfolderagprogramming\coevolutionrayga\typedeclaration.h
+	"gmp.h"
+
+1485340530 c:\gmp\gmp.h
+	<iosfwd>
+	<cstdio>
+	<stddef.h>
+	<limits.h>
+
+1531564360 d:\workingfolderagprogramming\coevolutionrayga\communesfunctions.h
+
+1523191503 d:\workingfolderagprogramming\coevolutionrayga\binaryencoding.h
+
+1531309372 d:\workingfolderagprogramming\coevolutionrayga\compilationconditionnelle.h
+
+1531754926 source:d:\workingfolderagprogramming\coevolutionrayga\communesfunctions.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./vertex_to_cluster.h"
+	"./fractionalEncoding.h"
+	"./sortedCutBasedEncoding.h"
+	"./cutBasedEncoding.h"
+	"./binaryEncoding.h"
+	"gmp.h"
+
+1523197500 d:\workingfolderagprogramming\coevolutionrayga\vertex_to_cluster.h
+
+1523478261 d:\workingfolderagprogramming\coevolutionrayga\fractionalencoding.h
+
+1523198322 d:\workingfolderagprogramming\coevolutionrayga\sortedcutbasedencoding.h
+
+1523356886 d:\workingfolderagprogramming\coevolutionrayga\cutbasedencoding.h
+
+1527257952 source:d:\workingfolderagprogramming\coevolutionrayga\cutbasedencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./cutBasedEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523200619 source:d:\workingfolderagprogramming\coevolutionrayga\ecartencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./ecartEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523199154 d:\workingfolderagprogramming\coevolutionrayga\ecartencoding.h
+
+1527257919 source:d:\workingfolderagprogramming\coevolutionrayga\fractionalencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./fractionalEncoding.h"
+	"./compilationConditionnelle.h"
+
+1535214579 source:d:\workingfolderagprogramming\coevolutionrayga\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	<malloc.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./compilationConditionnelle.h"
+	"./ecartEncoding.h"
+	"./sortedBinaryGroupNumberEncoding.h"
+	"./sortedCutBasedEncoding.h"
+	"./cutBasedEncoding.h"
+	"./pMediansEncoding.h"
+	"./fractionalEncoding.h"
+	"./vertex_to_cluster.h"
+	"./binaryEncoding.h"
+	"opningFiles.txt"
+
+1523198282 d:\workingfolderagprogramming\coevolutionrayga\sortedbinarygroupnumberencoding.h
+
+1523197989 d:\workingfolderagprogramming\coevolutionrayga\pmediansencoding.h
+
+1527221989 d:\workingfolderagprogramming\coevolutionrayga\opningfiles.txt
+
+1527257969 source:d:\workingfolderagprogramming\coevolutionrayga\pmediansencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./pMediansEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523185183 source:d:\workingfolderagprogramming\coevolutionrayga\sortedbinarygroupnumberencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./sortedBinaryGroupNumberEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523198610 source:d:\workingfolderagprogramming\coevolutionrayga\sortedcutbasedencoding.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./sortedCutBasedEncoding.h"
+	"./compilationConditionnelle.h"
+
+1523198698 source:d:\workingfolderagprogramming\coevolutionrayga\sortedvtc.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./SortedVTC.h"
+	"./compilationConditionnelle.h"
+
+1523198714 d:\workingfolderagprogramming\coevolutionrayga\sortedvtc.h
+
+1523185705 source:d:\workingfolderagprogramming\coevolutionrayga\vertex_to_cluster.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<math.h>
+	"typeDeclaration.h"
+	"./communesFunctions.h"
+	"./vertex_to_cluster.h"
+	"./compilationConditionnelle.h"
+

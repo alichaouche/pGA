@@ -1,0 +1,66 @@
+
+///=============================================================================================================
+    partitionBE *populationBE1,*populationBE2, *solutionDominanteBE;
+    populationBE1 = (partitionBE*)malloc(taillePopulation*sizeof (partitionBE));
+    if(populationBE1==NULL) printf("memory allocation failed for the populationBE1 \n");
+    populationBE2 = (partitionBE*)malloc(taillePopulation*sizeof(partitionBE));
+    if(populationBE2==NULL) printf("memory allocation failed for the populationBE2 \n");
+    solutionDominanteBE = (partitionBE*)malloc(sizeof(partitionBE));
+    if(solutionDominanteBE==NULL) printf("memory allocation failed for the solutionDominanteBE \n");
+///=============================================================================================================
+    partitionCBE *populationCBE1,*populationCBE2, *solutionDominanteCBE;
+    populationCBE1 = (partitionCBE*)malloc(taillePopulation*sizeof (partitionCBE));
+    if(populationCBE1==NULL) printf("memory allocation failed for the populationCBE1 \n");
+    populationCBE2 = (partitionCBE*)malloc(taillePopulation*sizeof(partitionCBE));
+    if(populationCBE2==NULL) printf("memory allocation failed for the populationCBE2 \n");
+    solutionDominanteCBE = (partitionCBE*)malloc(sizeof(partitionCBE));
+    if(solutionDominanteCBE==NULL) printf("memory allocation failed for the solutionDominanteCBE \n");
+///=============================================================================================================
+    partitionEE *populationEE1,*populationEE2, *solutionDominanteEE;
+    populationEE1 = (partitionEE*)malloc(taillePopulation*sizeof (partitionEE));
+    if(populationEE1==NULL) printf("memory allocation failed for the populationEE1 \n");
+    populationEE2 = (partitionEE*)malloc(taillePopulation*sizeof(partitionEE));
+    if(populationEE2==NULL) printf("memory allocation failed for the populationEE2 \n");
+    solutionDominanteEE = (partitionEE*)malloc(sizeof(partitionEE));
+    if(solutionDominanteEE==NULL) printf("memory allocation failed for the solutionDominanteEE \n");
+///=============================================================================================================
+    partitionFC *populationFC1,*populationFC2, *solutionDominanteFC;
+    populationFC1 = (partitionFC*)malloc(taillePopulation*sizeof (partitionFC));
+     if(populationFC1==NULL) printf("memory allocation failed for the populationFC1 \n");
+    populationFC2 = (partitionFC*)malloc(taillePopulation*sizeof(partitionFC));
+    if(populationFC2==NULL) printf("memory allocation failed for the populationFC2 \n");
+    solutionDominanteFC = (partitionFC*)malloc(sizeof(partitionFC));
+    if(solutionDominanteFC==NULL) printf("memory allocation failed for the solutionDominanteFC \n");
+///=============================================================================================================
+    partitionPMP *populationPMP1,*populationPMP2, *solutionDominantePMP;
+    populationPMP1 = (partitionPMP*)malloc(taillePopulation*sizeof (partitionPMP));
+    if(populationPMP1==NULL) printf("memory allocation failed for the populationPMP1 \n");
+    populationPMP2 = (partitionPMP*)malloc(taillePopulation*sizeof(partitionPMP));
+    if(populationPMP2==NULL) printf("memory allocation failed for the populationPMP2 \n");
+    solutionDominantePMP = (partitionPMP*)malloc(sizeof(partitionPMP));
+     if(solutionDominantePMP==NULL) printf("memory allocation failed for the solutionDominantePMP \n");
+///=============================================================================================================
+    partitionSBGNE *populationSBGNE1,*populationSBGNE2, *solutionDominanteSBGNE;
+    populationSBGNE1 = (partitionSBGNE*)malloc(taillePopulation*sizeof (partitionSBGNE));
+    if(populationSBGNE1==NULL) printf("memory allocation failed for the populationSBGNE1 \n");
+    populationSBGNE2 = (partitionSBGNE*)malloc(taillePopulation*sizeof(partitionSBGNE));
+    if(populationSBGNE2==NULL) printf("memory allocation failed for the populationSBGNE2 \n");
+    solutionDominanteSBGNE = (partitionSBGNE*)malloc(sizeof(partitionSBGNE));
+    if(solutionDominanteSBGNE==NULL) printf("memory allocation failed for the solutionDominanteSBGNE \n");
+///=============================================================================================================
+    partitionSCBE *populationSCBE1,*populationSCBE2, *solutionDominanteSCBE;
+    populationSCBE1 = (partitionSCBE*)malloc(taillePopulation*sizeof (partitionSCBE));
+    if(populationSCBE1==NULL) printf("memory allocation failed for the populationSCBE1 \n");
+    populationSCBE2 = (partitionSCBE*)malloc(taillePopulation*sizeof(partitionSCBE));
+    if(populationSCBE2==NULL) printf("memory allocation failed for the populationSCBE2 \n");
+    solutionDominanteSCBE = (partitionSCBE*)malloc(sizeof(partitionSCBE));
+    if(solutionDominanteSCBE==NULL) printf("memory allocation failed for the solutionDominanteSCBE \n");
+///=============================================================================================================
+    partitionVTC *populationVTC1,*populationVTC2, *solutionDominanteVTC;
+    populationVTC1 = (partitionVTC*)malloc(taillePopulation*sizeof (partitionVTC));
+    if(populationVTC1==NULL) printf("memory allocation failed for the populationVTC1 \n");
+    populationVTC2 = (partitionVTC*)malloc(taillePopulation*sizeof(partitionVTC));
+    if(populationVTC2==NULL) printf("memory allocation failed for the populationVTC2 \n");
+    solutionDominanteVTC = (partitionVTC*)malloc(sizeof(partitionVTC));
+    if(solutionDominanteVTC==NULL) printf("memory allocation failed for the solutionDominanteVTC \n");
+///=============================================================================================================
